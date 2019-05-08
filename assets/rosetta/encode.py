@@ -33,7 +33,7 @@ primes = [2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59,61,67,71]
 for line in plaintext.split("\n"):
   for word in line.split(" "):
     for index,char in enumerate(list(word)):
-      val = (ord(char)-64+primes[index])%27
+      val = (ord(char)-65+primes[index])%26+1
       if val//9 == 0:
         first = "C"
       elif val//9 == 1:
