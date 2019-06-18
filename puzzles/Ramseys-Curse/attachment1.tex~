@@ -1,0 +1,13 @@
+\begin{tikzpicture}
+    \draw [very thick] (-4,0) -- (-3,0) -- (-2,0) -- (-1,0) -- (0,0) -- (1,0) -- (2,0) -- (3,0) -- (4,0);
+    
+    \draw [color = black, fill = white, very thick] (-4,0) circle (8pt);
+    \draw [color = black, fill = white, very thick] (-3,0) circle (8pt);
+    \draw [color = black, fill = white, very thick] (-2,0) circle (8pt);
+    \draw [color = black, fill = white, very thick] (-1,0) circle (8pt);
+    \draw [color = black, fill = white, very thick] (0,0) circle (8pt);
+    \draw [color = black, fill = white, very thick] (1,0) circle (8pt);
+    \draw [color = black, fill = white, very thick] (2,0) circle (8pt);
+    \draw [color = black, fill = white, very thick] (3,0) circle (8pt);
+    \draw [color = black, fill = white, very thick] (4,0) circle (8pt);    
+\end{tikzpicture}
