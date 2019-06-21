@@ -1,0 +1,10 @@
+Province D\\
+Population = 100
+\begin{tabular}{c c c }
+
+Year 1 & Year 2 & Year 3 \\
+ \includegraphics[width=2in]{Gerry5x5-100-1.pdf} &  \includegraphics[width=2in]{Gerry5x5-100-2.pdf} &  \includegraphics[width=2in]{Gerry5x5-100-3.pdf}\\
+ Total Vote Count &  Total Vote Count &  Total Vote Count\\
+ X -  38& X - 31 & X  - 44\\
+ O - 62 & O - 69 & O - 56
+ \end{tabular}

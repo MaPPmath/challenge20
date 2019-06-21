@@ -1,0 +1,10 @@
+Province E\\
+Population = 120
+\begin{tabular}{c c c }
+
+Year 1 & Year 2 & Year 3 \\
+ \includegraphics[width=2in]{Gerry5x5-120-1.pdf} &  \includegraphics[width=2in]{Gerry5x5-120-2.pdf} &  \includegraphics[width=2in]{Gerry5x5-120-3.pdf}\\
+ Total Vote Count &  Total Vote Count &  Total Vote Count\\
+ X -  45& X - 40 & X  - 50\\
+ O - 75 & O - 80 & O - 70
+ \end{tabular}
