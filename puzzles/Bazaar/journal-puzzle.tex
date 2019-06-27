@@ -1,0 +1,22 @@
+Great work on Main Puzzle 2! I think we can use your answer
+to extract a hidden password from Journal Entry 2.
+
+In each story, you figured out which of the statements 1-5 were Possible (P)
+or Impossible (I). What if we organize that information like this:
+
+\begin{center}
+\begin{tabular}{c|ccc|cc}
+& Story 1 & Story 2 & Story 3 & Binary & 0-7 \\\hline
+Statement 1 & I & P & I & 010 & 2 \\
+Statement 2 & P & P & I \\ % 110 6
+Statement 3 & I & I & I \\ % 000 0
+Statement 4 & P & P & P \\ % 111 7
+Statement 5 & I & P & P % 011 3
+\end{tabular}
+\end{center}
+
+I think we're supposed to cut out the lower square, and then further
+cut out the rectangles that match those numbers. What will happen
+if we place that cut-out on the barcode-looking thing above it?
+Maybe the Code Sheet will help us decipher the resulting \(2\times 3\)
+rectangles?
