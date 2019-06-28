@@ -2,15 +2,16 @@ Great work on Main Puzzle 2! I think we can use your answer
 to extract a hidden password from Journal Entry 2.
 
 In each story, you figured out which of the statements 1-5 were Possible (P)
-or Impossible (I). What if we organize that information like this:
+or Impossible (I). What if we organize that information like this,
+using \(I=0,P=1\):
 
 \begin{center}
 \begin{tabular}{c|ccc|cc}
-& Story 1 & Story 2 & Story 3 & Binary & 0-7 \\\hline
-Statement 1 & I & P & I & 010 & 2 \\
-Statement 2 & P & P & I \\ % 110 6
-Statement 3 & I & I & I \\ % 000 0
-Statement 4 & P & P & P \\ % 111 7
+& Story 1 & Story 2 & Story 3 & Binary & Decimal \\\hline
+Statement 1 & P & P & I & 110 & 6 \\
+Statement 2 & I & P & I \\ % 010 2
+Statement 3 & P & I & I \\ % 100 4
+Statement 4 & I & I & P \\ % 001 1
 Statement 5 & I & P & P % 011 3
 \end{tabular}
 \end{center}
