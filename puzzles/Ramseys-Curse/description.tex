@@ -30,8 +30,9 @@ For instance, one site looked like
 where the circles represent rooms and the lines represent the passages connecting them.
 
 Dr. Jonas could send 9 people out to the site and find the mummy immediately, but that's not very efficient.
-With just 2 people, one of them will visit 1 chamber, and the other will visit 3, for a total of 4 chambers.
-
+Instead, she can send down just 2 people, and have the maximum number of rooms they have to explore be three 3.
+Following the Univeristy accounting scheme, this has a cost of 5 as opposed to 9.
+This is the best that Dr. Jonas can do.
 \begin{center}
 \begin{tikzpicture}[scale=0.5]
     \draw [very thick] (-3,0) -- (3,0);
@@ -46,6 +47,19 @@ With just 2 people, one of them will visit 1 chamber, and the other will visit 3
     \draw [color = black, fill = white, very thick] (-2,2) circle (8pt);
     \draw [color = black, fill = white, very thick] (2,-2) circle (8pt);
     \draw [color = black, fill = white, very thick] (-2,-2) circle (8pt);
+
+    \node at (0,1) {2};
+    \node at (-4,0) {1};
+    \node at (4,0) {1};
+    \node at (0,-4) {3};
+    \node at (2.7,2.7) {2};
+    \node at (-2.7,2.7) {2};
+    \node at (2.7,-2.7) {2};
+    \node at (-2.7,-2.7) {2};
+    \node at (0,4) {3};
+
+    \node[align=left] at (12,0) {\,\, 2 people \\ \underline{+3 rooms \quad} \\ \,\, 5 total cost};
+    
 \end{tikzpicture}
 \end{center}
 
