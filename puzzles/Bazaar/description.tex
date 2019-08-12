@@ -1,43 +1,81 @@
 The Skolem people of Mesopotamia had many myths and legends.
-Of great interest to Dr. Jonas was the story of queen Noether, famed for her ability to barter with traders and merchants.
-You may have met a good haggler or two in your day, but they didn't have to deal with the strange ways of the Skolem Bazaar.
-The Skolem people had no money, instead goods were exchanged for other goods.
-Moreover, at the start of each day the shopkeepers would declare their exchange rates.
-They were notoriously stubborn and would not change these rates no matter what happened.
+Dr. Jonas was particularly interested in the story of Queen Noether,
+famed for her ability to barter with traders and merchants. Legend has it,
+she had no trouble making some fantastic trades. Even if some
+seem like bad deals, Noether could make any of the following trades,
+and their opposite trades as well.
 
-Dr. Jonas believed that Noether was real, and wanted to learn as much about her as possible.
-Unfortunately, over time every story about Noether split into multiple versions.
-In one, Noether entered the marketplace with one bag of spice.
 \begin{itemize}
-  \item The first shopkeeper declared that 1 bag of spice is equivalent to 4 shell bracelets and 1 clay cup. (\(S \leftrightarrow 4B + C\))
-  \item The second shopkeeper declared that 1 shell bracelet is equivalent to 3 bags of spice and 3 clay cups. (\(B \leftrightarrow 3S + 3C\))
-  \item The third shopkeeper declared that 1 clay cup is equivalent to 1 bag of spice and 1 shell bracelet. (\(C \leftrightarrow S + B\))    
+\item One apple for one piece of meat:
+  \(A\leftrightarrow M\)
+\item One bottle for one magic crystal and one spice bag:
+  \(B\leftrightarrow C+S\)
+\item One magic crystal for two magic crystals:
+  \(C\leftrightarrow 2C\)
+\item One flag for one flag and one tapestry:
+  \(F\leftrightarrow F+T\)
+\item One loaf of bread for one apple and one piece of meat:
+  \(L\leftrightarrow A+M\)
+\item One piece of meat for one apple, one loaf of bread, and one piece of meat:
+  \(M\leftrightarrow A+L+M\)
+\item One quilt for one quilt and one tapestry:
+  \(Q\leftrightarrow Q+T\)
+\item One spice bag for one bottle:
+  \(S\leftrightarrow B\)
+\item One tapestry for one flag and one quilt:
+  \(T\leftrightarrow F+Q\)
 \end{itemize}
-There are two versions of the story:
-\begin{enumerate}
-  \item Noether entered the bazaar with 1 bag of spice and left with exactly 7 clay cups and nothing else.
-  \item Noether entered the bazaar with 1 bag of spice and left with exactly 7 shell bracelets and nothing else.
-\end{enumerate}
 
-Dr. Jonas reasoned that the first version was possible and that the second was impossible.
-Version one could happen the following way:
-\begin{enumerate}
-  \item Go to shopkeeper 1: \(S \rightarrow 4B + C\)
-  \item Go to shopkeeper 2 and use 1 shell bracelet: \(4B + C = B + 3B + C = 3S + 3C + 3B + C = 3S + 3B + 4C\)
-  \item Go to shopkeeper 3 to get a clay cups: \(3S + 3B + 4C = 3C + 4C = 7C\)
-  \end{enumerate}
-  
-%Hint 1:
-%So why is the second version impossible? Consider the total amount of bags of spice an clay cups: \(S + C\).
+Despite this, even Noether had her limits. Sure, she could certainly exchange
+two bottles for two spice bags and two magic crystals, since
+\(B+B\rightarrow B+C+S\rightarrow S+S+C\rightarrow S+S+C+C\). But there's no
+way she could exchange one spice bag for two bottles by using those
+trades alone.
+
+I think Dr. Jonas was investigating these limits in the November entry of her journal.
+For each of the three markets, decide if each trade is possible (P) or impossible
+(I). Submit your solution to ClueKeeper using the format \texttt{PIPIP} for
+each market. -BF
+
+%Of great interest to Dr. Jonas was the story of queen Noether, famed for her ability to barter with traders and merchants.
+%You may have met a good haggler or two in your day, but they didn't have to deal with the strange ways of the Skolem Bazaar.
+%The Skolem people had no money, instead goods were exchanged for other goods.
+%Moreover, at the start of each day the shopkeepers would declare their exchange rates.
+%They were notoriously stubborn and would not change these rates no matter what happened.
+%
+%Dr. Jonas believed that Noether was real, and wanted to learn as much about her as possible.
+%Unfortunately, over time every story about Noether split into multiple versions.
+%In one, Noether entered the marketplace with one bag of spice.
 %\begin{itemize}
-%  \item The first shopkeeper does not change this amount.
-%  \item The second shopkeeper increases/decreases this amount by 6.
-%  \item The third shopkeeper does not change this amount.
+%  \item The first shopkeeper declared that 1 bag of spice is equivalent to 4 shell bracelets and 1 clay cup. (\(S \leftrightarrow 4B + C\))
+%  \item The second shopkeeper declared that 1 shell bracelet is equivalent to 3 bags of spice and 3 clay cups. (\(B \leftrightarrow 3S + 3C\))
+%  \item The third shopkeeper declared that 1 clay cup is equivalent to 1 bag of spice and 1 shell bracelet. (\(C \leftrightarrow S + B\))    
 %\end{itemize}
-%Since Noether starts with \(S + C = 1\), it can only become \(1, 7, 13,\) and so on.
-%So it is impossible for her to end up with exactly \(7\) bracelets.
-%In cluekeeper, this solution would be put in as PI.
-%If there were five variants which were possible, impossible, impossible, possible, and impossible, the solution would be PIIPI.
-
-There are many more stories about Noether. If you can figure out which ones are possible and 
-which are impossible, you might be able to decipher the message hidden in Dr. Jonas' journal.
+%There are two versions of the story:
+%\begin{enumerate}
+%  \item Noether entered the bazaar with 1 bag of spice and left with exactly 7 clay cups and nothing else.
+%  \item Noether entered the bazaar with 1 bag of spice and left with exactly 7 shell bracelets and nothing else.
+%\end{enumerate}
+%
+%Dr. Jonas reasoned that the first version was possible and that the second was impossible.
+%Version one could happen the following way:
+%\begin{enumerate}
+%  \item Go to shopkeeper 1: \(S \rightarrow 4B + C\)
+%  \item Go to shopkeeper 2 and use 1 shell bracelet: \(4B + C = B + 3B + C = 3S + 3C + 3B + C = 3S + 3B + 4C\)
+%  \item Go to shopkeeper 3 to get a clay cups: \(3S + 3B + 4C = 3C + 4C = 7C\)
+%  \end{enumerate}
+%  
+%%Hint 1:
+%%So why is the second version impossible? Consider the total amount of bags of spice an clay cups: \(S + C\).
+%%\begin{itemize}
+%%  \item The first shopkeeper does not change this amount.
+%%  \item The second shopkeeper increases/decreases this amount by 6.
+%%  \item The third shopkeeper does not change this amount.
+%%\end{itemize}
+%%Since Noether starts with \(S + C = 1\), it can only become \(1, 7, 13,\) and so on.
+%%So it is impossible for her to end up with exactly \(7\) bracelets.
+%%In cluekeeper, this solution would be put in as PI.
+%%If there were five variants which were possible, impossible, impossible, possible, and impossible, the solution would be PIIPI.
+%
+%There are many more stories about Noether. If you can figure out which ones are possible and 
+%which are impossible, you might be able to decipher the message hidden in Dr. Jonas' journal.

@@ -1,23 +1,26 @@
-Great work on Main Puzzle 2! I think we can use your answer
-to extract a hidden password from Journal Entry 2.
-
-In each story, you figured out which of the statements 1-5 were Possible (P)
-or Impossible (I). What if we organize that information like this,
-using \(I=0,P=1\):
+Nicely done!
+You figured out which of the trades were possible (P)
+or impossible (I) for each market. 
+What if we organize that information like this, letting
+\(P=1\) and \(I=0\):
 
 \begin{center}
 \begin{tabular}{c|ccc|cc}
-& Story 1 & Story 2 & Story 3 & Binary & Decimal \\\hline
-Statement 1 & P & P & I & 110 & 6 \\
-Statement 2 & I & P & I \\ % 010 2
-Statement 3 & P & I & I \\ % 100 4
-Statement 4 & I & I & P \\ % 001 1
-Statement 5 & I & P & P % 011 3
+& Village M. & M. Square & Black M. & Binary \\\hline
+\#1 & P & P & I & 110 & \\
+\#2 & I & P & I \\ % 010 2
+\#3 & P & I & I \\ % 100 4
+\#4 & I & I & P \\ % 001 1
+\#5 & I & P & P % 011 3
 \end{tabular}
 \end{center}
 
-I think we're supposed to cut out the lower square, and then further
-cut out the rectangles that match those numbers. What will happen
-if we place that cut-out on the barcode-looking thing above it?
-Maybe the Code Sheet will help us decipher the resulting \(2\times 3\)
-rectangles?
+Each binary number with
+three digits is equal to a number between \(0\) and \(7\),
+and those are the exact numbers found in the September journal
+entry. That's not a QR code - it's another hidden message from
+Dr. Jonas!
+
+I'll leave it to you to figure out how to use the five numbers
+from the chart above to solve the September puzzle, but I have
+a feeling that binary isn't the only code involved here...
