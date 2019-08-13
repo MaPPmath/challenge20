@@ -1,6 +1,42 @@
 \begin{center}
+\begin{tikzpicture}[x=0.25in,y=0.25in]
+\begin{scope}[every node/.style={circle,fill=black}]
+\node at (0:10) {};
+\node at (36:10) {};
+\node at (72:10) {};
+\node at (108:10) {};
+\node at (144:10) {};
+\node at (180:10) {};
+\node at (-144:10) {};
+\node at (-108:10) {};
+\node at (-72:10) {};
+\node at (-36:10) {};
+\end{scope}
+\begin{scope}[every node/.style={inner sep=1em}]
+\node[anchor=west] at (0:10) {1};
+\node[anchor=south west] at (36:10) {2};
+\node[anchor=south] at (72:10) {3};
+\node[anchor=south] at (108:10) {4};
+\node[anchor=south east] at (144:10) {5};
+\node[anchor=east] at (180:10) {6};
+\node[anchor=north east] at (-144:10) {7};
+\node[anchor=north] at (-108:10) {8};
+\node[anchor=north] at (-72:10) {9};
+\node[anchor=north west] at (-36:10) {0};
+\end{scope}
+\foreach \x in {36,72,...,324} {
+  \foreach \y in {0,36,...,\x} {
+    \draw[black!20] (\x:10) -- (\y:10);
+  } 
+}
+\end{tikzpicture}
+\end{center}
+
+\newpage
+
+\begin{center}
 \fbox{
-\begin{tikzpicture}[scale=0.9, every node/.style={scale=0.9}]]
+\begin{tikzpicture}[scale=0.9, every node/.style={scale=0.9}]
 %4 1 8 3 5 10 9 6 2 7
 %h e f d c i  j g a b 
     \node[left] at (0,9) {\(+ \rightarrow \downarrow \bigcirc \Diamond + \Delta \nabla - = +\)};
@@ -63,16 +99,16 @@
     \node[right] at (10,0) {\(+ \Diamond \bigcirc \Delta \times \times \Diamond \nabla \bigcirc \nabla \uparrow +\)};
     \node at (9.5,0) {\braille{c}};
     
-    %\draw [very thick] (.5,9) -- (9.5,6);
-    %\draw [very thick] (.5,8) -- (9.5,1);
-    %\draw [very thick] (.5,7) -- (9.5,9);
-    %\draw [very thick] (.5,6) -- (9.5,5);
-    %\draw [very thick] (.5,5) -- (9.5,8);
-    %\draw [very thick] (.5,4) -- (9.5,3);
-    %\draw [very thick] (.5,3) -- (9.5,4);
-    %\draw [very thick] (.5,2) -- (9.5,7);
-    %\draw [very thick] (.5,1) -- (9.5,0);
-    %\draw [very thick] (.5,0) -- (9.5,2);
+    \draw [very thick] (.5,9) -- (9.5,6);
+    \draw [very thick] (.5,8) -- (9.5,1);
+    \draw [very thick] (.5,7) -- (9.5,9);
+    \draw [very thick] (.5,6) -- (9.5,5);
+    \draw [very thick] (.5,5) -- (9.5,8);
+    \draw [very thick] (.5,4) -- (9.5,3);
+    \draw [very thick] (.5,3) -- (9.5,4);
+    \draw [very thick] (.5,2) -- (9.5,7);
+    \draw [very thick] (.5,1) -- (9.5,0);
+    \draw [very thick] (.5,0) -- (9.5,2);
     
     \node[draw,circle] at (3.1,8.6) {H};
     \node[draw,circle] at (7.5,8) {T};
