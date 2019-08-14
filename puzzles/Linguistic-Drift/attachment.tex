@@ -1,6 +1,30 @@
+\newcommand{\dotNode}[1]{
+\begin{scope}[shift={(#1)},every path/.style={fill=white}]
+\draw (0,0) circle (0.5);
+\fill[black] (0,0) circle (0.2);
+\end{scope}
+}
+\newcommand{\dashNode}[1]{
+\begin{scope}[shift={(#1)},every path/.style={fill=white}]
+\draw (0,0) circle (0.5);
+\draw (180:0.3) -- (0:0.3);
+\end{scope}
+}
 \begin{center}
 \begin{tikzpicture}[x=0.25in,y=0.25in]
-\begin{scope}[every node/.style={circle,fill=black}]
+%\foreach \x in {36,72,...,324} {
+%  \foreach \y in {0,36,...,\x} {
+%    \draw[black!20] (\x:10) -- (\y:10);
+%  } 
+%}
+%\begin{scope}[every path/.style={thick}]
+%\draw (0:10) -- (-36:10);
+%\draw (36:10) -- (-144:10);
+%\draw (72:10) -- (-108:10);
+%\draw (108:10) -- (-180:10);
+%\draw (144:10) -- (-72:10);
+%\end{scope}
+\begin{scope}[every node/.style={circle,fill=black,draw=black}]
 \node at (0:10) {};
 \node at (36:10) {};
 \node at (72:10) {};
@@ -13,126 +37,146 @@
 \node at (-36:10) {};
 \end{scope}
 \begin{scope}[every node/.style={inner sep=1em}]
-\node[anchor=west] at (0:10) {1};
-\node[anchor=south west] at (36:10) {2};
-\node[anchor=south] at (72:10) {3};
-\node[anchor=south] at (108:10) {4};
-\node[anchor=south east] at (144:10) {5};
-\node[anchor=east] at (180:10) {6};
-\node[anchor=north east] at (-144:10) {7};
-\node[anchor=north] at (-108:10) {8};
-\node[anchor=north] at (-72:10) {9};
-\node[anchor=north west] at (-36:10) {0};
+\node[anchor=west] at (0:10)          {876};%3
+\node[anchor=south west] at (36:10)   {248};%5
+\node[anchor=south] at (72:10)        {323};%8
+\node[anchor=south] at (108:10)       {142};%7
+\node[anchor=south east] at (144:10)  {486};%0
+\node[anchor=east] at (180:10)        {803};%2
+\node[anchor=north east] at (-144:10) {752};%4
+\node[anchor=north] at (-108:10)      {397};%1
+\node[anchor=north] at (-72:10)       {792};%0
+\node[anchor=north west] at (-36:10)  {528};%6
 \end{scope}
-\foreach \x in {36,72,...,324} {
-  \foreach \y in {0,36,...,\x} {
-    \draw[black!20] (\x:10) -- (\y:10);
-  } 
-}
+\begin{scope}
+%P
+\dotNode{-108:8.1}
+\dashNode{-108:4}
+\dashNode{0:0}
+\dotNode{72:8.1}
+%R
+\dotNode{-144:6.2}
+\dashNode{-108:4}
+\dotNode{36:6.2}
+%I
+\dotNode{162:8.5}
+\dotNode{126:8.5}
+%M
+\dashNode{-108:4}
+\dashNode{162:5.2}
+%E
+\dotNode{-18:9.5}
+%Distractors
+\dashNode{54:9.5}
+\dashNode{-126:9.5}
+\dashNode{-36:6.2}
+\dotNode{0:6.2}
+\dotNode{108:3.8}
+\end{scope}
 \end{tikzpicture}
 \end{center}
 
-\newpage
-
-\begin{center}
-\fbox{
-\begin{tikzpicture}[scale=0.9, every node/.style={scale=0.9}]
-%4 1 8 3 5 10 9 6 2 7
-%h e f d c i  j g a b 
-    \node[left] at (0,9) {\(+ \rightarrow \downarrow \bigcirc \Diamond + \Delta \nabla - = +\)};
-    \node[circle, fill=black] at (.5,9) {};
-    
-    \node[right] at (10,9) {\(+ \bigcirc \square = \times \bigcirc \nabla \rightarrow \square +\)};
-    \node at (9.5,9) {\braille{e}};
-    
-    \node[left] at (0,8) {\(+ \nabla \bigcirc \nabla \times \times \Downarrow \square \Diamond +\)};
-    \node[circle, fill=black] at (.5,8) {};
-    
-    \node[right] at (10,8) {\(\times \downarrow \downarrow \Diamond \square + \square \Leftrightarrow \times\)};
-    \node at (9.5,8) {\braille{b}};
-    
-    \node[left] at (0,7) {\(\times \bigcirc \Diamond - - \times \bigcirc \nabla \rightarrow \square \times\)};
-    \node[circle, fill=black] at (.5,7) {};
-    
-    \node[right] at (10,7) {\(+ \square \nabla \bigcirc \nabla \times \times \times - = \Delta \bigcirc \square +\)};
-    \node at (9.5,7) {\braille{f}};
-    
-    \node[left] at (0,6) {\(\times \Rightarrow \square \bigcirc \times \times \rightarrow \uparrow \square \times\)};
-    \node[circle, fill=black] at (.5,6) {};
-    
-    \node[right] at (10,6) {\(\times \Searrow \bigcirc \square \times \times \Delta \nabla - - - \times\)};
-    \node at (9.5,6) {\braille{j}};
-    
-    \node[left] at (0,5) {\(+ \Downarrow \square \square \times \times \Diamond \leftarrow \rightarrow +\)};
-    \node[circle, fill=black] at (.5,5) {};
-    
-    \node[right] at (10,5) {\(+ \rightarrow \rightarrow \Diamond \bigcirc \times \times \Nearrow \Diamond +\)};
-    \node at (9.5,5) {\braille{d}};
-    
-    \node[left] at (0,4) {\(\times \nabla \bigcirc \nabla \times \times \Downarrow \square \Diamond +\)};
-    \node[circle, fill=black] at (.5,4) {};
-    
-    \node[right] at (10,4) {\(\times - \Downarrow + + \nabla \bigcirc \nabla \square +\)};
-    \node at (9.5,4) {\braille{i}};
-    
-    \node[left] at (0,3) {\(+ - \downarrow \downarrow + + \bigcirc \Delta \Diamond +\)};
-    \node[circle, fill=black] at (.5,3) {};
-    
-    \node[right] at (10,3) {\(\times \bigcirc \Delta + \downarrow \downarrow \square \square +\)};
-    \node at (9.5,3) {\braille{h}};
-    
-    \node[left] at (0,2) {\(\times \square \bigcirc \Delta \times + \equiv \Delta \bigcirc \square \times\)};
-    \node[circle, fill=black] at (.5,2) {};
-    
-    \node[right] at (10,2) {\(+ \nabla \bigcirc \nabla \leftarrow \downarrow + \times \times \Diamond \bigcirc \uparrow \times \times\)};
-    \node at (9.5,2) {\braille{g}};
-    
-    \node[left] at (0,1) {\(\times \Diamond \nabla \bigcirc \nabla + \square \bigcirc \Delta \uparrow \times\)};
-    \node[circle, fill=black] at (.5,1) {};
-    
-    \node[right] at (10,1) {\(\times \bigcirc \Delta + \Downarrow \square \square \times\)};
-    \node at (9.5,1) {\braille{a}};
-    
-    \node[left] at (0,0) {\(+ \bigcirc \Delta \Swarrow + + \square \bigcirc \uparrow \times \times\)};
-    \node[circle, fill=black] at (.5,0) {};
-    
-    \node[right] at (10,0) {\(+ \Diamond \bigcirc \Delta \times \times \Diamond \nabla \bigcirc \nabla \uparrow +\)};
-    \node at (9.5,0) {\braille{c}};
-    
-    \draw [very thick] (.5,9) -- (9.5,6);
-    \draw [very thick] (.5,8) -- (9.5,1);
-    \draw [very thick] (.5,7) -- (9.5,9);
-    \draw [very thick] (.5,6) -- (9.5,5);
-    \draw [very thick] (.5,5) -- (9.5,8);
-    \draw [very thick] (.5,4) -- (9.5,3);
-    \draw [very thick] (.5,3) -- (9.5,4);
-    \draw [very thick] (.5,2) -- (9.5,7);
-    \draw [very thick] (.5,1) -- (9.5,0);
-    \draw [very thick] (.5,0) -- (9.5,2);
-    
-    \node[draw,circle] at (3.1,8.6) {H};
-    \node[draw,circle] at (7.5,8) {T};
-    \node[draw,circle] at (8,7.5) {L};
-    \node[draw,circle] at (2.8,7.5) {A};
-    \node[draw,circle] at (5.4,7.3) {S};
-    \node[draw,circle] at (1.7,6.3) {Y};
-    \node[draw,circle] at (3.7,6.7) {M};
-    \node[draw,circle] at (6,6.1) {O};
-    \node[draw,circle] at (7.5,5.9) {D};
-    \node[draw,circle] at (5,5.5) {I};
-    \node[draw,circle] at (2.5,4.8) {C};
-    \node[draw,circle] at (4.3,5) {P};
-    \node[draw,circle] at (7.3,4.5) {M};
-    \node[draw,circle] at (1.5,3.1) {N};
-    \node[draw,circle] at (8,3.2) {A};
-    \node[draw,circle] at (3.2,2.5) {F};
-    \node[draw,circle] at (5.5,2.8) {R};
-    \node[draw,circle] at (4,1.3) {O};
-    \node[draw,circle] at (8.2,1) {G};
-    \node[draw,circle] at (8,0.2) {E};
-    \node[draw,circle] at (2,0.3) {I};
-\end{tikzpicture}
-}
-\end{center}
-
-\vfill
+%\newpage
+%
+%\begin{center}
+%\fbox{
+%\begin{tikzpicture}[scale=0.9, every node/.style={scale=0.9}]
+%%4 1 8 3 5 10 9 6 2 7
+%%h e f d c i  j g a b 
+%    \node[left] at (0,9) {\(+ \rightarrow \downarrow \bigcirc \Diamond + \Delta \nabla - = +\)};
+%    \node[circle, fill=black] at (.5,9) {};
+%    
+%    \node[right] at (10,9) {\(+ \bigcirc \square = \times \bigcirc \nabla \rightarrow \square +\)};
+%    \node at (9.5,9) {\braille{e}};
+%    
+%    \node[left] at (0,8) {\(+ \nabla \bigcirc \nabla \times \times \Downarrow \square \Diamond +\)};
+%    \node[circle, fill=black] at (.5,8) {};
+%    
+%    \node[right] at (10,8) {\(\times \downarrow \downarrow \Diamond \square + \square \Leftrightarrow \times\)};
+%    \node at (9.5,8) {\braille{b}};
+%    
+%    \node[left] at (0,7) {\(\times \bigcirc \Diamond - - \times \bigcirc \nabla \rightarrow \square \times\)};
+%    \node[circle, fill=black] at (.5,7) {};
+%    
+%    \node[right] at (10,7) {\(+ \square \nabla \bigcirc \nabla \times \times \times - = \Delta \bigcirc \square +\)};
+%    \node at (9.5,7) {\braille{f}};
+%    
+%    \node[left] at (0,6) {\(\times \Rightarrow \square \bigcirc \times \times \rightarrow \uparrow \square \times\)};
+%    \node[circle, fill=black] at (.5,6) {};
+%    
+%    \node[right] at (10,6) {\(\times \Searrow \bigcirc \square \times \times \Delta \nabla - - - \times\)};
+%    \node at (9.5,6) {\braille{j}};
+%    
+%    \node[left] at (0,5) {\(+ \Downarrow \square \square \times \times \Diamond \leftarrow \rightarrow +\)};
+%    \node[circle, fill=black] at (.5,5) {};
+%    
+%    \node[right] at (10,5) {\(+ \rightarrow \rightarrow \Diamond \bigcirc \times \times \Nearrow \Diamond +\)};
+%    \node at (9.5,5) {\braille{d}};
+%    
+%    \node[left] at (0,4) {\(\times \nabla \bigcirc \nabla \times \times \Downarrow \square \Diamond +\)};
+%    \node[circle, fill=black] at (.5,4) {};
+%    
+%    \node[right] at (10,4) {\(\times - \Downarrow + + \nabla \bigcirc \nabla \square +\)};
+%    \node at (9.5,4) {\braille{i}};
+%    
+%    \node[left] at (0,3) {\(+ - \downarrow \downarrow + + \bigcirc \Delta \Diamond +\)};
+%    \node[circle, fill=black] at (.5,3) {};
+%    
+%    \node[right] at (10,3) {\(\times \bigcirc \Delta + \downarrow \downarrow \square \square +\)};
+%    \node at (9.5,3) {\braille{h}};
+%    
+%    \node[left] at (0,2) {\(\times \square \bigcirc \Delta \times + \equiv \Delta \bigcirc \square \times\)};
+%    \node[circle, fill=black] at (.5,2) {};
+%    
+%    \node[right] at (10,2) {\(+ \nabla \bigcirc \nabla \leftarrow \downarrow + \times \times \Diamond \bigcirc \uparrow \times \times\)};
+%    \node at (9.5,2) {\braille{g}};
+%    
+%    \node[left] at (0,1) {\(\times \Diamond \nabla \bigcirc \nabla + \square \bigcirc \Delta \uparrow \times\)};
+%    \node[circle, fill=black] at (.5,1) {};
+%    
+%    \node[right] at (10,1) {\(\times \bigcirc \Delta + \Downarrow \square \square \times\)};
+%    \node at (9.5,1) {\braille{a}};
+%    
+%    \node[left] at (0,0) {\(+ \bigcirc \Delta \Swarrow + + \square \bigcirc \uparrow \times \times\)};
+%    \node[circle, fill=black] at (.5,0) {};
+%    
+%    \node[right] at (10,0) {\(+ \Diamond \bigcirc \Delta \times \times \Diamond \nabla \bigcirc \nabla \uparrow +\)};
+%    \node at (9.5,0) {\braille{c}};
+%    
+%    \draw [very thick] (.5,9) -- (9.5,6);
+%    \draw [very thick] (.5,8) -- (9.5,1);
+%    \draw [very thick] (.5,7) -- (9.5,9);
+%    \draw [very thick] (.5,6) -- (9.5,5);
+%    \draw [very thick] (.5,5) -- (9.5,8);
+%    \draw [very thick] (.5,4) -- (9.5,3);
+%    \draw [very thick] (.5,3) -- (9.5,4);
+%    \draw [very thick] (.5,2) -- (9.5,7);
+%    \draw [very thick] (.5,1) -- (9.5,0);
+%    \draw [very thick] (.5,0) -- (9.5,2);
+%    
+%    \node[draw,circle] at (3.1,8.6) {H};
+%    \node[draw,circle] at (7.5,8) {T};
+%    \node[draw,circle] at (8,7.5) {L};
+%    \node[draw,circle] at (2.8,7.5) {A};
+%    \node[draw,circle] at (5.4,7.3) {S};
+%    \node[draw,circle] at (1.7,6.3) {Y};
+%    \node[draw,circle] at (3.7,6.7) {M};
+%    \node[draw,circle] at (6,6.1) {O};
+%    \node[draw,circle] at (7.5,5.9) {D};
+%    \node[draw,circle] at (5,5.5) {I};
+%    \node[draw,circle] at (2.5,4.8) {C};
+%    \node[draw,circle] at (4.3,5) {P};
+%    \node[draw,circle] at (7.3,4.5) {M};
+%    \node[draw,circle] at (1.5,3.1) {N};
+%    \node[draw,circle] at (8,3.2) {A};
+%    \node[draw,circle] at (3.2,2.5) {F};
+%    \node[draw,circle] at (5.5,2.8) {R};
+%    \node[draw,circle] at (4,1.3) {O};
+%    \node[draw,circle] at (8.2,1) {G};
+%    \node[draw,circle] at (8,0.2) {E};
+%    \node[draw,circle] at (2,0.3) {I};
+%\end{tikzpicture}
+%}
+%\end{center}
+%
+%\vfill
