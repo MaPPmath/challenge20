@@ -1,39 +1,35 @@
-One of Dr. Jonas' greatest discoveries was the Heyting people, a democratic collection of 6 tribes that lived on the Eurasian steppes.
-They kept meticulous records of their elections and their rulers.
-Strangely, even though the Heyting people were democratic, the voting records indicated that many of their leaders recived far less than the majority of the votes.
+One of Dr. Jonas' greatest discoveries was the democratic nation
+of Heyting people, who kept meticulous records of their elections 
+and their rulers.
+Strangely, even though the Heyting people were democratic, 
+their voting records indicated that many of their elected officials
+recived far less than the majority of the votes.
 How could this happen?
 
-Well, to simplify the voting process, the tribes had broken their land up into provinces.
-Each province had one vote for the next ruler of that tribe, which was based upon
-the majority vote from within the province.
-However, since the tribe leaders were allowed to redraw the boundaries of the provinces 
-each year using the following guidelines,
-the minority party was able to keep power.
+Well, to simplify the voting process, each of the Heyting tribes had broken their 
+land up into districts.
+Each district had one vote for the next ruler of that tribe, which was based upon
+the majority vote from within the district.
+However, since the existing tribe leaders were allowed to draw the boundaries 
+of the districts as long as they respected the following guidelines,
+the minority party X was able to keep power from the majority party O.
 \begin{enumerate}
-\item The number of provinces in each tribe had to stay the same each year.
-\item Each province had to be a single connected region.
-\item The difference in population between any two provinces had to be 5 or less.
-\item All province boundary lines had to follow the horizontal and vertical grid lines provided.
+\item Each district had to be a single connected region.
+\item Each district needed to contain a single temple (marked as stars on the maps).
+\item The difference in population between any two districts had to be 5 or less.
+\item All district boundary lines had to follow the horizontal and vertical grid lines provided.
 \end{enumerate}
 
-Determine the number of provinces for each Tribe A-E from Dr. Jonas's journal that allowed the minority party
-to win the majority of provinces each year. Enter this into ClueKeeper using the format A\#-B\#-C\#-D\#-E\#.
-To help, an example is given below.
+For each of the four tribes, find a way to draw the district lines such that party X
+has strictly more votes than party O in more than half of the total districts.
+Then enter the total population (Xs and Os) for each of the capital districts (containing
+the biggest star) into
+ClueKeeper using the following format: \texttt{A\#\#-B\#\#-C\#\#-D\#\#}.
 
-\begin{center}
-Tribe X,
-Population = 50,
-Provinces = 4
+I'm attaching an example Tribe X. Note that its solution would be entered into ClueKeeper as \texttt{X19}. -BF
 
-\begin{tabular}{c c c }
-
-Year 1 & Year 2 & Year 3 \\
- \includegraphics[width=2in]{assets/Gerrymandering/Gerry4x4-50-1Solution.pdf} &  \includegraphics[width=2in]{assets/Gerrymandering/Gerry4x4-50-2Solution.pdf} &  \includegraphics[width=2in]{assets/Gerrymandering/Gerry4x4-50-3Solution.pdf}\\
- Total Vote Count &  Total Vote Count &  Total Vote Count\\
- X - 22 people, \textbf{3 provinces won} & X - 22 people, \textbf{3 provinces won} & X  - 22 people, \textbf{3 provinces won}\\
- O - \textbf{28 people}, 1 province won & O - \textbf{28 people}, 1 province won & O - \textbf{28 people}, 1 province won
-\end{tabular}
-\end{center}
-
-%Dr. Jonas reasoned that there were 3 provinces for tribe X.
-%After finding the number of provinces for the other tribes, you should be able to decode the message in Dr. Jonas' journal.
+\hfill
+\includegraphics[width=2.5in]{assets/gerrymander-example.pdf} 
+\hfill
+\includegraphics[width=2.5in]{assets/gerrymander-example-solution.pdf}
+\hfill\phantom{}
