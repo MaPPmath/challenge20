@@ -2,29 +2,7 @@
 \begin{tikzpicture}[x=0.25in,y=0.25in]
 \input{assets/qrish/generate}
 \node at (0.5,14.5) {$\star$};
-\begin{scope}[shift={(5,8)}] %T
-  \fill[color=white] (0,0) rectangle (2,3);
-%  \draw[color=cyan,thick] (0,0) rectangle (2,3);
-  \fill[color=white] (0,2) rectangle (1,3);
-  \fill[color=black] (1,2) rectangle (2,3);
-  \fill[color=black] (0,1) rectangle (1,2);
-  \fill[color=black] (1,1) rectangle (2,2);
-  \fill[color=black] (0,0) rectangle (1,1);
-  \fill[color=white] (1,0) rectangle (2,1);
-%  \node[transform shape,color=red,anchor=west] at (2,1.5) {$\uparrow$};
-\end{scope}
-\begin{scope}[shift={(10,3)},rotate=180] %R
-  \fill[color=white] (0,0) rectangle (2,3);
-%  \draw[color=cyan,thick] (0,0) rectangle (2,3);
-  \fill[color=black] (0,2) rectangle (1,3);
-  \fill[color=white] (1,2) rectangle (2,3);
-  \fill[color=black] (0,1) rectangle (1,2);
-  \fill[color=black] (1,1) rectangle (2,2);
-  \fill[color=black] (0,0) rectangle (1,1);
-  \fill[color=white] (1,0) rectangle (2,1);
-%  \node[transform shape,color=red,anchor=west] at (2,1.5) {$\uparrow$};
-\end{scope}
-\begin{scope}[shift={(1,6)}] %A
+\begin{scope}[shift={(5,8)}] %A
   \fill[color=white] (0,0) rectangle (2,3);
 %  \draw[color=cyan,thick] (0,0) rectangle (2,3);
   \fill[color=black] (0,2) rectangle (1,3);
@@ -35,18 +13,29 @@
   \fill[color=white] (1,0) rectangle (2,1);
 %  \node[transform shape,color=red,anchor=west] at (2,1.5) {$\uparrow$};
 \end{scope}
-\begin{scope}[shift={(10,13)},rotate=-90] %D
+\begin{scope}[shift={(10,3)},rotate=180] %L
   \fill[color=white] (0,0) rectangle (2,3);
 %  \draw[color=cyan,thick] (0,0) rectangle (2,3);
   \fill[color=black] (0,2) rectangle (1,3);
+  \fill[color=white] (1,2) rectangle (2,3);
+  \fill[color=black] (0,1) rectangle (1,2);
+  \fill[color=white] (1,1) rectangle (2,2);
+  \fill[color=black] (0,0) rectangle (1,1);
+  \fill[color=white] (1,0) rectangle (2,1);
+%  \node[transform shape,color=red,anchor=west] at (2,1.5) {$\uparrow$};
+\end{scope}
+\begin{scope}[shift={(1,6)}] %I
+  \fill[color=white] (0,0) rectangle (2,3);
+%  \draw[color=cyan,thick] (0,0) rectangle (2,3);
+  \fill[color=white] (0,2) rectangle (1,3);
   \fill[color=black] (1,2) rectangle (2,3);
-  \fill[color=white] (0,1) rectangle (1,2);
-  \fill[color=black] (1,1) rectangle (2,2);
+  \fill[color=black] (0,1) rectangle (1,2);
+  \fill[color=white] (1,1) rectangle (2,2);
   \fill[color=white] (0,0) rectangle (1,1);
   \fill[color=white] (1,0) rectangle (2,1);
 %  \node[transform shape,color=red,anchor=west] at (2,1.5) {$\uparrow$};
 \end{scope}
-\begin{scope}[shift={(9,4)},rotate=90] %E
+\begin{scope}[shift={(10,13)},rotate=-90] %E
   \fill[color=white] (0,0) rectangle (2,3);
 %  \draw[color=cyan,thick] (0,0) rectangle (2,3);
   \fill[color=black] (0,2) rectangle (1,3);
@@ -54,6 +43,17 @@
   \fill[color=white] (0,1) rectangle (1,2);
   \fill[color=black] (1,1) rectangle (2,2);
   \fill[color=white] (0,0) rectangle (1,1);
+  \fill[color=white] (1,0) rectangle (2,1);
+%  \node[transform shape,color=red,anchor=west] at (2,1.5) {$\uparrow$};
+\end{scope}
+\begin{scope}[shift={(9,4)},rotate=90] %N
+  \fill[color=white] (0,0) rectangle (2,3);
+%  \draw[color=cyan,thick] (0,0) rectangle (2,3);
+  \fill[color=black] (0,2) rectangle (1,3);
+  \fill[color=black] (1,2) rectangle (2,3);
+  \fill[color=white] (0,1) rectangle (1,2);
+  \fill[color=black] (1,1) rectangle (2,2);
+  \fill[color=black] (0,0) rectangle (1,1);
   \fill[color=white] (1,0) rectangle (2,1);
 %  \node[transform shape,color=red,anchor=west] at (2,1.5) {$\uparrow$};
 \end{scope}
