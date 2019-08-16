@@ -33,7 +33,7 @@ primes = [2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59,61,67,71]
 for line in plaintext.split("\n"):
   for word in line.split(" "):
     for index,char in enumerate(list(word)):
-      val = (ord(char)-65+primes[index])%26+1
+      val = ord(char)-64# (ord(char)-65+primes[index])%26+1
       if val//9 == 0:
         first = "C"
       elif val//9 == 1:
@@ -53,5 +53,5 @@ for line in plaintext.split("\n"):
       else:
         third = "S"
       print('\\tikz{{\code{}{{\code{}{{\code{}{{}}}}}}}}'.format(first,second,third))
-    print('\\tikz{\codeC{\codeC{\codeC{}}}}')
+    print('\\hspace{1em}')
   print()

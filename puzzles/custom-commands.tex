@@ -1,3 +1,22 @@
+\newcommand{\codeC}[1]{
+\draw (0.5,0.5) circle (0.5);
+\begin{scope}[shift={(0.3,0.3)},scale=0.4]
+#1
+\end{scope}
+}
+\newcommand{\codeT}[1]{
+\draw (0,0) -- (1,0) -- (0.5,1) -- (0,0);
+\begin{scope}[shift={(0.3,0.1)},scale=0.4]
+#1
+\end{scope}
+}
+\newcommand{\codeS}[1]{
+\draw (0,0) -- (1,0) -- (1,1) -- (0,1) -- (0,0);
+\begin{scope}[shift={(0.3,0.3)},scale=0.4]
+#1
+\end{scope}
+}
+
 \newcommand{\morseDit}{{\large .}}
 \newcommand{\morseDah}{{\large -}}
 
