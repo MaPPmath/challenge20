@@ -1,67 +1,94 @@
 The necropolis of Ramsey is a complex of underground mausoleums, buried by earth and time.
-It is also where Dr. Jonas almost got fired.
-After finding her first mummy, she seemed to be cursed.
-Whenever she entered a new crypt, the mummy inside of it would be as far away from her team as possible.
-It's not that they had a hard time finding the mummies, in fact the walls had directions on them leading straight to the sarcophagus.
-Still, she had of run of impossibly bad luck.
+It is also where Dr. Jonas almost got fired. It seems that these mausoleums were cursed,
+guaranteeing that the room containing hidden artifacts would always be as far away from her
+excavation team as possible, wasting university resources.
 
-Once the university realized how much resources Dr. Jonas was spending on her digs, they demanded she stop ``wasting'' their money.
-She needed to minimize the number of rooms her team was exploring.
-Using ground penetrating radar, Dr. Jonas was able to scout out possible sarcophagus locations and the passages between them.
-For instance, one site looked like
+To solve this problem, she made the following plan. To explore a masoleum, she would
+send one or more research assistants into accessible rooms, each costing \$1000 in funds.
+Then using advanced artifact-finding technology, she could pinpoint the location of the
+hidden artifacts, and one of the closest assistants could then travel to that room 
+(which is always as far away as possible, and might require traveling
+through rooms inaccessible from the surface) and
+extract the goods, costing another \$1000 per room explored.
 
+I've attached an example of such a plan to this message. Each labeled circle
+is a room of the masoleum accessible from the surface, and each gray circle
+is inaccessible. There is a unique way to place assistants to minimize the total
+cost of this masolum to \$4000, which I've marked with squares. Remember
+that due to the curse, the artifacts must appear in one of the rooms
+distance 2 away from any assistant.
+
+I have a feeling that Dr. Jonas's February entry contains three of these
+masoleum diagrams. Can you identify where to place assistants in each
+to minimize the total cost of all three crypts?
+Answer using ClueKeeper with the format \texttt{bg}, listing all
+letters used in alphabetical order.
 \begin{center}
-\begin{tikzpicture}[scale=0.5]
-    \draw [very thick] (-3,0) -- (3,0);
+\begin{tikzpicture}[x=0.25in,y=0.25in]
+    \draw [very thick] (-3,0) -- (-1,0);
+    \draw [very thick] (3,0) -- (1,0);
     \draw [very thick] (-3,0) -- (-2,2) -- (0,3) -- (2,2) -- (3,0) -- (2,-2) -- (0,-3) -- (-2,-2) -- cycle;
     
-    \filldraw [color = black, fill = white, very thick] (0,0) circle (8pt);
-    \draw [color = black, fill = white, very thick] (-3,0) circle (8pt);
-    \draw [color = black, fill = white, very thick] (3,0) circle (8pt);
-    \draw [color = black, fill = white, very thick] (0,-3) circle (8pt);
-    \draw [color = black, fill = white, very thick] (0,3) circle (8pt);
-    \draw [color = black, fill = white, very thick] (2,2) circle (8pt);
-    \draw [color = black, fill = white, very thick] (-2,2) circle (8pt);
-    \draw [color = black, fill = white, very thick] (2,-2) circle (8pt);
-    \draw [color = black, fill = white, very thick] (-2,-2) circle (8pt);
+    \draw [color = black, fill = white, very thick] (-3,0) circle (0.4);
+      \node at (-3,0) {b};
+    \draw [color = black, fill = black!60, very thick] (-2,0) circle (0.4);
+    \draw [color = black, fill = white, very thick] (-1,0) circle (0.4);
+      \node at (-1,0) {d};
+    \draw [color = black, fill = white, very thick] (3,0) circle (0.4);
+      \node at (3,0) {g};
+    \draw [color = black, fill = white, very thick] (2,0) circle (0.4);
+      \node at (2,0) {i};
+    \draw [color = black, fill = black!60, very thick] (1,0) circle (0.4);
+    \draw [color = black, fill = black!60, very thick] (0,-3) circle (0.4);
+    \draw [color = black, fill = white, very thick] (0,3) circle (0.4);
+      \node at (0,3) {e};
+    \draw [color = black, fill = black!60, very thick] (2,2) circle (0.4);
+    \draw [color = black, fill = white, very thick] (-2,2) circle (0.4);
+      \node at (-2,2) {f};
+    \draw [color = black, fill = white, very thick] (2,-2) circle (0.4);
+      \node at (2,-2) {c};
+    \draw [color = black, fill = white, very thick] (-2,-2) circle (0.4);
+      \node at (-2,-2) {h};
+\begin{scope}[shift={(9,0)}]
+    \draw [very thick] (-3,0) -- (-1,0);
+    \draw [very thick] (3,0) -- (1,0);
+    \draw [very thick] (-3,0) -- (-2,2) -- (0,3) -- (2,2) -- (3,0) -- (2,-2) -- (0,-3) -- (-2,-2) -- cycle;
+    
+    \draw [color = black, fill = white, very thick] (-3,0) circle (0.4);
+      \node at (-3,0) {b};
+    \draw [color = black, fill = black!60, very thick] (-2,0) circle (0.4);
+    \draw [color = black, fill = white, very thick] (-1,0) circle (0.4);
+      \node at (-1,0) {d};
+    \draw [color = black, fill = white, very thick] (3,0) circle (0.4);
+      \node at (3,0) {g};
+    \draw [color = black, fill = white, very thick] (2,0) circle (0.4);
+      \node at (2,0) {i};
+    \draw [color = black, fill = black!60, very thick] (1,0) circle (0.4);
+    \draw [color = black, fill = black!60, very thick] (0,-3) circle (0.4);
+    \draw [color = black, fill = white, very thick] (0,3) circle (0.4);
+      \node at (0,3) {e};
+    \draw [color = black, fill = black!60, very thick] (2,2) circle (0.4);
+    \draw [color = black, fill = white, very thick] (-2,2) circle (0.4);
+      \node at (-2,2) {f};
+    \draw [color = black, fill = white, very thick] (2,-2) circle (0.4);
+      \node at (2,-2) {c};
+    \draw [color = black, fill = white, very thick] (-2,-2) circle (0.4);
+      \node at (-2,-2) {h};
+
+      \draw[thick] (-2.6,-0.4) -- (-2.6,0.4) -- (-3.4,0.4) -- (-3.4,-0.4) -- cycle;
+      \draw[thick] (2.6,-0.4) -- (2.6,0.4) -- (3.4,0.4) -- (3.4,-0.4) -- cycle;
+    \node[anchor=south] at (-1,0.4) {2};
+    \node[anchor=south] at (-2,0.4) {1};
+    \node[anchor=south] at (1,0.4) {2};
+    \node[anchor=south] at (2,0.4) {1};
+    \node[anchor=south] at (-2,2.4) {1};
+    \node[anchor=south] at (2,2.4) {1};
+    \node[anchor=north] at (-2,-2.4) {1};
+    \node[anchor=north] at (2,-2.4) {1};
+    \node[anchor=south] at (0,3.4) {2};
+    \node[anchor=north] at (0,-3.4) {2};
+\end{scope}
+    \node[align=right] at (17,0) 
+      {2 people for \$2000 \\ \underline{+2 extra rooms for \$2000} \\ total cost \$4000};
   \end{tikzpicture}
-  \end{center}
-  
-where the circles represent rooms and the lines represent the passages connecting them.
-
-Dr. Jonas could send 9 people out to the site and find the mummy immediately, but that's not very efficient.
-Instead, she can send down just 2 people, and have the maximum number of rooms they have to explore be three 3.
-Following the Univeristy accounting scheme, this has a cost of 5 as opposed to 9.
-This is the best that Dr. Jonas can do.
-\begin{center}
-\begin{tikzpicture}[scale=0.5]
-    \draw [very thick] (-3,0) -- (3,0);
-    \draw [very thick] (-3,0) -- (-2,2) -- (0,3) -- (2,2) -- (3,0) -- (2,-2) -- (0,-3) -- (-2,-2) -- cycle;
-    
-    \draw [color = black, fill = white, very thick] (0,0) circle (8pt);
-    \draw [color = black, fill = black, very thick] (-3,0) circle (8pt);
-    \draw [color = black, fill = black, very thick] (3,0) circle (8pt);
-    \draw [color = black, fill = white, very thick] (0,-3) circle (8pt);
-    \draw [color = black, fill = white, very thick] (0,3) circle (8pt);
-    \draw [color = black, fill = white, very thick] (2,2) circle (8pt);
-    \draw [color = black, fill = white, very thick] (-2,2) circle (8pt);
-    \draw [color = black, fill = white, very thick] (2,-2) circle (8pt);
-    \draw [color = black, fill = white, very thick] (-2,-2) circle (8pt);
-
-    \node at (0,1) {2};
-    \node at (-4,0) {1};
-    \node at (4,0) {1};
-    \node at (0,-4) {3};
-    \node at (2.7,2.7) {2};
-    \node at (-2.7,2.7) {2};
-    \node at (2.7,-2.7) {2};
-    \node at (-2.7,-2.7) {2};
-    \node at (0,4) {3};
-
-    \node[align=left] at (12,0) {\,\, 2 people \\ \underline{+3 rooms \quad} \\ \,\, 5 total cost};
-    
-\end{tikzpicture}
 \end{center}
-
-There are four more site diagrams in Dr. Jonas' notes.
-If you can figure out the minimum cost of exploring these crypts, B. Fraiser will be able to tell you how to deciper the next journal page.
