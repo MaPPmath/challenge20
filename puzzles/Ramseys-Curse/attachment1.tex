@@ -88,18 +88,21 @@
 \begin{tikzpicture}[x=0.25in,y=0.25in]
 \begin{scope}[shift={(0:3)}]   
     \draw [very thick] (-180:3) -- (-108:3) -- (-36:3) -- (36:3) -- (108:3) -- cycle;
+    \draw [very thick] (108:3) -- (4,3) -- (4,-3);
 %    \draw [color = black, fill = white, very thick] (-180:3) circle (0.4);
     \draw [color = black, fill = black!60, very thick] (-108:3) circle (0.4);
-    \draw [color = black, fill = black!60, very thick] (-36:3) circle (0.4);
-    \draw [color = black, fill = white, very thick] (36:3) circle (0.4);
-      \node at (36:3) {s};
+    \draw [color = black, fill = black!60, very thick] (36:3) circle (0.4);
+    \draw [color = black, fill = white, very thick] (-36:3) circle (0.4);
+      \node at (-36:3) {s};
     \draw [color = black, fill = white, very thick] (108:3) circle (0.4);
-      \node at (108:3) {t};
+      \node at (108:3) {v};
+    \draw [color = black, fill = black!60, very thick] (4,3) circle (0.4);
+    \draw [color = black, fill = black!60, very thick] (4,-3) circle (0.4);
 \end{scope}
 \begin{scope}[shift={(0:-3)}] 
     \draw [very thick] (-180:3) -- (-120:3) -- (-60:3) -- (0:3) -- (60:3) -- (120:3) -- cycle;
     \draw [color = black, fill = white, very thick] (0:3) circle (0.4);
-      \node at (0:3) {v};
+      \node at (0:3) {t};
     \draw [color = black, fill = white, very thick] (60:3) circle (0.4);
       \node at (60:3) {u};
     \draw [color = black, fill = black!60, very thick] (120:3) circle (0.4);
@@ -110,13 +113,21 @@
 \end{scope}
 \begin{scope}[shift={(0:-9)}] 
     \draw [very thick] (-180:3) -- (-90:3) -- (0:3) -- (90:3) -- cycle;
+    \draw [very thick] (0,-3) -- (-3,-3);
+    \draw [very thick] (0,3) -- (-3,3);
     \draw [color = black, fill = white, very thick] (0:3) circle (0.4);
       \node at (0:3) {x};
     \draw [color = black, fill = white, very thick] (90:3) circle (0.4);
       \node at (90:3) {y};
     \draw [color = black, fill = black!60, very thick] (180:3) circle (0.4);
-    \draw [color = black, fill = white, very thick] (-90:3) circle (0.4);
-      \node at (-90:3) {z};
+    \draw [color = black, fill = black!60, very thick] (-90:3) circle (0.4);
+    \draw [color = black, fill = white, very thick] (-3,-3) circle (0.4);
+      \node at (-3,-3) {z};
+    \draw [color = black, fill = black!60, very thick] (-3,3) circle (0.4);
 \end{scope}
   \end{tikzpicture}
   \end{center}
+
+\vfill
+
+\begin{center}TOTAL BUDGET: \$12000\end{center}
