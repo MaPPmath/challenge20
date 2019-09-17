@@ -3,8 +3,12 @@
 
 \usepackage[puttinydots]{braille}
 \usepackage{multicol}
+\usepackage[T1]{fontenc}
+\newcommand{\wedn}{}
+\usepackage{txfonts}
+\usepackage{tikz}
 
-\phSetTitle{MaPP Challenge '20 -- Mystery of the Missing Archaeologist}
+\phSetTitle{MaPP Challenge '20 -- Mindy Jonas and the Enigmatic Legacy}
 \phSetAuthor{Mathematical Puzzle Programs}
 % \phUseAuthorWithTitle
 
@@ -22,11 +26,15 @@
 \phTitlePage % Prints title page.
 \phTableOfContents % Prints table of contents
 
-\phChapterWorksheet{Game Resources}{Scoresheet}
+\phChapter{Campus Guidelines}
 
-  \input{about/scoresheet}
+  \input{about/campus}
 
-  \phWorksheet{Reference Sheet}
+\phChapterWorksheet{How to Play}{Rules}
+
+  \input{about/rules}
+
+\phChapterWorksheet{Game Resources}{Reference Sheet}
 
   \input{about/reference}
 
@@ -34,173 +42,151 @@
 
   \input{about/start-code}
 
-  \phWorksheet{Opening Puzzle}
+  \phWorksheet{Campus Map - University of South Alabama}
 
-  %\input{puzzles/star-chart/attachment}
+  \input{about/campus-map}
 
-  \phWorksheet{Campus Map Instructions}
+\phPart{Player Book}
 
-  \input{about/campus-map-instructions}
+\phChapterWorksheet{Dr. Jonas's Journal}{January 20}
 
-  \phWorksheet{Unlocking Puzzles}
+\input{puzzles/Linguistic-Drift/attachment}
 
-  \input{about/unlocking-puzzles}
+\phWorksheet{February 05}
 
-\phChapterWorksheet{How to Play}{Rules}
+\input{puzzles/Ramseys-Curse/attachment1}
 
-  \input{about/rules}
+\phWorksheet{March 16}
 
-\phChapterWorksheet{Campus Guidelines}{Guidelines}
+\input{puzzles/Gerrymandering/journal}
 
-  \input{about/campus}
+\phWorksheet{April 03}
 
+\input{puzzles/Ramseys-Curse/journal}
 
-%\phChapterWorksheet{Where No One Has Gone Before}{Galaxy Chart}
-%
-%
-%  \phWorksheet{Opening Puzzle}
-%
-%  \input{puzzles/star-chart/description}
+\phWorksheet{May 04}
 
-\phChapterWorksheet{Good News Everyone}{Delivery Schedule}
+\input{puzzles/Gerrymandering/attachment2}
 
-  \input{puzzles/good-news/attachment}
+\phWorksheet{June 28}
 
-  \phWorksheet{Main Puzzle 1}
+\input{puzzles/Billiards/journal}
 
-  \input{puzzles/good-news/description}
+\phWorksheet{July 21}
 
-  \phWorksheet{Solution}
+  \input{puzzles/budget/attachment}
 
-  \input{puzzles/good-news/solution}
+\phWorksheet{August 09}
 
-\phChapterWorksheet{Extraterrestrial}{Ship Floorplan}
+\input{puzzles/Billiards/attachment1}
 
-  \input{puzzles/extraterrestrial/attachment}
+\phWorksheet{August 10}
 
-  \phWorksheet{Main Puzzle 2}
+\input{puzzles/Billiards/attachment2}
 
-  \input{puzzles/extraterrestrial/description}
+\phWorksheet{August 11}
 
-  \phWorksheet{Solution}
+\input{puzzles/Billiards/attachment3}
 
-  \input{puzzles/extraterrestrial/solution}
+\phWorksheet{August 12}
 
-\phChapterWorksheet{Wibbly-Wobbly Timey-Wimey}{Dimensional Signals}
+\input{puzzles/Billiards/attachment4}
 
-  \input{puzzles/timey-wimey/attachment}
+\phWorksheet{September 18}
 
-  \phWorksheet{Main Puzzle 3}
+\input{puzzles/Bazaar/journal}
 
-  \input{puzzles/timey-wimey/description}
+\phWorksheet{October 22}
 
-  \phWorksheet{Solution}
+  \input{puzzles/word-maze/attachment}
 
-  \input{puzzles/timey-wimey/solution}
+\phWorksheet{November 01}
 
-\phChapterWorksheet{Jumping Through Hyperspace}{Hyperspace Engines}
+\input{puzzles/Bazaar/attachment1}
 
-  \input{puzzles/hyperspace/attachment}
+\phWorksheet{December 25}
 
-  \phWorksheet{Main Puzzle 4}
+\input{puzzles/ZendoCryptic/attachment}
 
-  \input{puzzles/hyperspace/description}
+\phWorksheet{Undated Entry \#1}
 
-  \phWorksheet{Solution}
+  \input{puzzles/location/puzzle}
 
-  \input{puzzles/hyperspace/solution}
+\phWorksheet{Undated Entry \#2}
 
-\phChapterWorksheet{Hailing Frequencies Open}{Bleeps and Bloops}
+  \input{puzzles/meta/puzzle}
 
-  \input{puzzles/hailing/attachment}
+\phPart{ClueKeeper Info}
+\phChapter{Location Puzzles}
 
-  \phWorksheet{Cryptic Puzzle 1}
+\input{puzzles/location/cluekeeper}
 
-  \input{puzzles/hailing/description}
+\phChapterWorksheet{Main Puzzle 1}{Searching the Tombs}
 
-  \phWorksheet{Solution}
+\input{puzzles/Ramseys-Curse/description}
 
-  \input{puzzles/hailing/solution}
+\phWorksheet{Searching the Tombs - Part 2}
 
-\phChapterWorksheet{Out of Gas}{Reserve Tank Switchboard}
+\input{puzzles/Ramseys-Curse/journal-puzzle}
 
-  \input{puzzles/out-of-gas/attachment}
+\phChapterWorksheet{Main Puzzle 2}{The Fox and the Rabbits}
 
-  \phWorksheet{Cryptic Puzzle 2}
+\input{puzzles/Billiards/description}
 
-  \input{puzzles/out-of-gas/description}
+\phWorksheet{The Fox and the Rabbits - Part 2}
 
-  \phWorksheet{Solution}
+\input{puzzles/Billiards/journal-puzzle}
 
-  \input{puzzles/out-of-gas/solution}
+\phChapterWorksheet{Main Puzzle 3}{Bazaar Trades}
 
-\phChapterWorksheet{AI Odyssey}{Cubic Monolith}
+\input{puzzles/Bazaar/description}
 
-  \input{puzzles/ai-odyssey/attachment}
+\phWorksheet{Bazaar Trades - Part 2}
 
-  \phWorksheet{Cryptic Puzzle 3}
+\input{puzzles/Bazaar/journal-puzzle}
 
-  \input{puzzles/ai-odyssey/description}
+\phChapterWorksheet{Main Puzzle 4}{Ancient Gerrymandering}
 
-  \phWorksheet{Solution}
+\input{puzzles/Gerrymandering/description}
 
-  \input{puzzles/ai-odyssey/solution}
+\phWorksheet{Ancient Gerrymandering - Part 2}
 
-\phChapterWorksheet{Word Problem}{Mysterious Message}
+\input{puzzles/Gerrymandering/journal-puzzle}
 
-  \input{puzzles/word-problem/attachment}
+\phChapterWorksheet{Cryptic Puzzle 1}{A Timely Text}
 
-  \phWorksheet{Cryptic Puzzle 4}
+  \input{puzzles/word-maze/description}
 
-  \input{puzzles/word-problem/description}
+\phChapterWorksheet{Cryptic Puzzle 2}{Dressed to the Nines}
 
-  \phWorksheet{Solution}
+\input{puzzles/Linguistic-Drift/description}
 
-  \input{puzzles/word-problem/solution}
+\phChapterWorksheet{Cryptic Puzzle 3}{Simon Says}
 
-\phChapterWorksheet{The Cosmic Wheel}{Wormhole Alpha (6x6, page 1/5)}
+\input{puzzles/ZendoCryptic/description}
 
-  \input{puzzles/cosmic-wheel/attachment}
+\phChapterWorksheet{Cryptic Puzzle 4}{It All Adds Up}
 
-  \phWorksheet{Wormhole Beta (6x6, page 2/5)}
+  \input{puzzles/budget/description}
 
-  \input{puzzles/cosmic-wheel/attachment-1}
+\phChapterWorksheet{Metapuzzle}{Let's Find the Professor!}
 
-  \phWorksheet{Wormhole Gamma (5x5, page 3/5)}
+  \input{puzzles/meta/cluekeeper}
 
-  \input{puzzles/cosmic-wheel/attachment-2}
+\phChapterWorksheet{Bonus Puzzle}{The Golden Deck}
 
-  \phWorksheet{Wormhole Omega (4x4, page 4/5)}
+  \input{puzzles/card-sort/puzzle}
 
-  \input{puzzles/cosmic-wheel/attachment-3}
+\phChapter{A Loose Thread}
 
-  \phWorksheet{Wormhole Zeta (5x5, page 5/5)}
+  \input{puzzles/hidden/puzzle}
 
-  \input{puzzles/cosmic-wheel/attachment-4}
 
-  \phWorksheet{Bonus Puzzle}
+\phPart{Solutions and Credits}
 
-  \input{puzzles/cosmic-wheel/description}
+\phChapter{Solutions}
 
-  \phWorksheet{Grading}
-
-  \input{puzzles/cosmic-wheel/grading}
-
-\phChapterWorksheet{To the Rescue!}{Enemy Insignias}
-
-  \input{puzzles/to-the-rescue/attachment}
-
-  \phWorksheet{Metapuzzle}
-
-  \input{puzzles/to-the-rescue/description}
-
-  \phWorksheet{Solution}
-
-  \input{puzzles/to-the-rescue/solution}
-
-\phChapterWorksheet{LOADING...}{Hidden Puzzle Solution}
-
-  \input{puzzles/loading/solution}
+  \input{about/solutions}
 
 \phChapterWorksheet{About the Game}{Credits}
 
